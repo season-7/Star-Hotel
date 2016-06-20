@@ -1,0 +1,105 @@
+/*Links*/
+a {
+  color: #648880;
+  text-decoration: none;
+}
+a:hover {
+  color: #a9b2b9;
+}
+
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+/*------------------
+HEADER
+-------------------*/
+.primary-header{
+    padding:10px;
+}
+
+.logo-container{
+    float: left;
+    display: flex;  
+}
+
+.logo-container img{
+    width:50px;
+    height:50px;
+}
+
+.top-nav{
+    float: right;
+}
+/*------------------
+SECTION
+-------------------*/
+
+/*Home*/
+.hero-container {
+  color: #fff;
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+
+.hero-container img{
+    width:50%;
+}
+.row{
+  min-width: 1000px;
+  background: #fff;
+  padding: 66px 0 44px 0;
+}
+
+.grid {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.grid, .col-1{
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.col-1{
+  display: inline-block;
+  vertical-align: top;
+  width: 29.33%;
+}
+
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
+}
+
+/*reservation*/
+
+/*Gallery*/
+
+/*Offers*/
+
+/*------------------
+FOOTER
+-------------------*/
+/*bottom footer*/
+.bottom-footer{
+    padding:10px;
+}
+
+.bottom-footer small{
+    padding:10px;
+    float:left;
+}
+
+.bottom-nav{
+    float:right;
+}
+
+/*top social container footer*/
+.social-container, .creator-container{
+    text-align:center;
+}
