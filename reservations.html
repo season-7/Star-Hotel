@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reservations</title>
+        <link rel="stylesheet" href="assets/stylesheets/styles.css">
+    </head>
+    <body>
+        <!--HEADER-->
+        <header class="primary-header">
+            <!--logo container-->
+            <div class="logo-container">
+                <!--logo-->
+                <img src="assets/images/star-logo.png">
+                <!--hotel name-->
+                <h2 class="hotel-name">Star Hotel</h2>
+            </div>
+            
+            <!--navigation-->
+            <nav class="top-nav">
+                <a href="index.html">Home</a>
+                <a href="reservations.html">Reservations</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="offers.html">Offers</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        
+        
+        <section id="reservation-form-container">
+            <!--title-->
+            <div class="leading-title">
+                <h1>Make a Reservation</h1>
+                <p class="tag-title">Excellent choice...</p>
+            </div>
+            
+            <form id="reservation-form">
+                <!--user inputs-->
+                
+                <div class="col-6-1">
+                    <!--first name-->
+                    <div class="input-block">
+                        <label for="" style="top: 25px; font-size: 18px;">First Name</label>
+                        <input class="input first_name" name="user_first_name" type="text">     
+                    </div>
+                    <!--last name-->
+                    <div class="input-block">
+                        <label for="" style="top: 25px; font-size: 18px;">Last Name</label>
+                        <input class="input last_name" name="user_last_name" type="text">   
+                    </div>
+                </div>
+                
+
+                <div class="col-6-1">
+                    <!--email-->
+                    <div class="input-block">
+                        <label for="" style="top: 25px; font-size: 18px;">Email</label>
+                        <input class="input email" name="user_email" type="email">                
+                    </div>
+                    <!--phone-->
+                    <div class="input-block">
+                        <label for="" style="top: 25px; font-size: 18px;">Phone Number</label>
+                        <input class="input phone" name="user_phone" type="tel">                
+                    </div>
+                </div>
+                
+                <!--Book a room block-->
+                <div class="col-12">
+                    <div class="room-block">
+                        <!--Rooms option-->
+                        <select class="input select" name="Book a Room">
+                            <option disabled>What room would you like?</option>
+                            <option selected>Presidential Suite</option>
+                            <option>Conference Room</option>                    
+                            <option>Full Board</option>
+                            <option>Half Board</option>
+                        </select>
+                    </div>
+                    <!--Amount per option-->
+                    <div class="amount-block">
+                        <input class="input amount" name="user_payment" placeholder="Amount" type="number" value="" readonly>
+                    </div>
+                </div>
+                <hr>
+                <h3 id="payment-title">How would you like to pay?</h3>
+                <!--Payment options-->
+                <div class="payment-options">
+                    
+                    <!--M-pesa-->
+                    <div class="payment-items">
+                        <img src="assets/images/star-logo.png"  style="width:55px;height:55px;">
+                        <p>M-pesa</p>
+                        <input id="m-pesa" class="input radio" type="checkbox" value="m-pesa">                        
+                    </div>
+                    <!--airtel money-->
+                    <div class="payment-items">
+                        <img src="assets/images/star-logo.png"  style="width:55px;height:55px;">
+                        <p>Airtel Money</p>
+                        <input id="airtel-money" class="input radio" type="checkbox" value="airtel-money">                        
+                    </div>
+                    <!--master card-->
+                    <div class="payment-items">
+                        <img src="assets/images/star-logo.png"  style="width:55px;height:55px;">
+                        <p>Mastercard</p>
+                        <input id="mastercard" class="input radio" type="checkbox" value="mastercard">
+                    </div>
+                    
+                    <!--visa-->
+                    <div class="payment-items">
+                        <img src="assets/images/star-logo.png"  style="width:55px;height:55px;">
+                        <p>Visa</p>
+                        <input id="visa" class="input radio" type="checkbox" value="visa">                        
+                    </div>
+                </div>
+                
+                <!--Submit button-->
+                <div class="submit-btn-container">
+                    <input class="input submit" type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+        
+        <!--Footer-->
+        <footer>
+                        <!--social container-->
+            <div class="social-container">
+                <!--Twitter-->
+                <a href="https://twitter.com/" class="button social" target="_blank">
+                    <img src="assets/images/Twitter-48.png">
+                </a>
+                <!--Google +-->
+                <a href="https://www.facebook.com/" class="button social">
+                    <img src="assets/images/Google%20Plus-48.png">
+                </a>
+                <!--FaceBook-->
+                <a href="https://plus.google.com/" class="button social">
+                    <img src="assets/images/Facebook-48.png">
+                </a>
+                <!--Instagram-->
+                <a href="https://www.instagram.com/" class="button social">
+                    <img src="assets/images/Instagram-48.png">
+                </a>
+                <!--Pinterest-->
+                <a href="https://www.pinterest.com/" class="button social">
+                    <img src="assets/images/Pinterest-48.png">
+                </a>  
+                <!--Tumblr-->
+                <a href="https://www.flickr.com/" class="button social">
+                    <img src="assets/images/Tumblr-48.png">
+                </a> 
+            </div>
+            
+            <!--bottom footer-->
+            <div class="bottom-footer">
+                <!--left-->
+                <small> &copy;2016 Star Hotel</small>
+
+                <!--bottom navigation-->
+                <nav class="bottom-nav">
+                    <a href="index.html">Home</a></li>
+                    <a href="reservations.html">Reservations</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="offers.html">Offers</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact Us</a>
+                </nav>
+            </div>
+            
+            <!--Creator container-->
+            <div class="creator-container">
+                <small>Created by <a href="http://www.codepen.io/mercury">Sneaky Bunny</a>, inspired by</small>
+                <img class="icon-food" src="assets/images/Food%20And%20Wine-48.png">
+            </div>
+        
+        <script type="text/javascript" src="js/star.js"></script>
+        </footer>
+    </body>
+</html>

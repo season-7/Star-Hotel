@@ -10,11 +10,12 @@ a:hover {
 p a {
   border-bottom: 1px solid #dfe2e5;
 }
-/*------------------
+/*=======================
 HEADER
--------------------*/
+========================*/
 .primary-header{
     padding:10px;
+    margin:25px;
 }
 
 .logo-container{
@@ -29,12 +30,31 @@ HEADER
 
 .top-nav{
     float: right;
+    padding:20px;
 }
-/*------------------
-SECTION
--------------------*/
 
-/*Home*/
+.top-nav a{
+    padding:10px;
+    display:inline-block;
+    font-family: cursive;
+}
+
+.top-nav a:link{
+}
+
+.top-nav a:active{
+    border: solid 1px cadetblue;
+    color:black;
+    background:cadetblue;
+    border-radius:10px;
+}
+
+/*=====================
+SECTIONs
+======================*/
+/*----------------------
+HOME PAGE
+----------------------*/
 .hero-container {
   color: #fff;
   line-height: 44px;
@@ -75,16 +95,149 @@ SECTION
   margin-bottom: 22px;
   max-width: 100%
 }
+/*-----------------------------
+RESERVATION PAGE
+-------------------------------*/
+.leading-title{
+    font-family:cursive;
+    text-align:center;
+}   
 
-/*reservation*/
+.tag-title{
+    font-family:monospace;    
+    font-size:16px;
+    text-align:center;
+}
 
-/*Gallery*/
+/*reservation form section*/
+#reservation-form-container{
+    margin:100px;
+}
+/*actual reservation form*/
+#reservation-form{
+    padding:25px;
+}
 
-/*Offers*/
+/*class for first and last names*/
+.col-6-1{
+    width:100%;
+    display:flex;
+}
 
-/*------------------
+/*containers for all inputs*/
+.input-block{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 1px #000;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    margin: 10px;
+}
+
+label{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    display: block;
+    margin: 0;
+    font-weight: 300;
+    z-index: 1;
+    color: #333;
+    font-size: 18px;
+    line-height: 10px;
+}
+
+/*Styled inputs*/
+.input{
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+    color: #333;
+}
+
+/*class for room block and amount block*/
+.col-12{
+    width:100%;
+    display:flex;
+}
+
+/*room container*/
+.room-block{
+    width:80%;
+    margin:10px;
+}
+/*style for select options*/
+.select{
+    width:100%;
+    border: solid 1px #000;
+    border-radius: 1px;
+    padding:10px;
+}
+.amount-block{
+    width:15%;
+    margin:10px;
+}
+/*amount input*/
+.amount{
+        width:100%;
+    border: solid 1px #000;
+    border-radius: 1px;
+    padding:10px;
+}
+#payment-title{
+    text-align:center;
+}
+/*payment option*/
+.payment-options{
+    padding:25px;
+    margin:10px;
+}
+
+.payment-items{
+    display:inline-table;
+    width:24.7%;
+    text-align: center;
+}
+
+#m-pesa{
+    
+}
+#airtel{}
+#master-card{}
+#visa{}
+
+/*submit button container*/
+.submit-btn-container{
+    text-align: center;
+}
+/*submit button*/
+.submit{
+    text-align: center;
+    background-color: #008080;
+    color: #FFF;
+    font-size: 120%;
+    height: 80px;
+    width:30%;
+    box-shadow: 0 5px rgba(199, 138, 138, 0.5);
+}
+
+/*---------------------------
+GALLERY PAGE
+----------------------------*/
+
+/*--------------------------
+OFFERS
+--------------------------*/
+
+/*======================
 FOOTER
--------------------*/
+======================*/
 /*bottom footer*/
 .bottom-footer{
     padding:10px;
