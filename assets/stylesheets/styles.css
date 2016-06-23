@@ -10,22 +10,36 @@ a:hover {
 p a {
   border-bottom: 1px solid #dfe2e5;
 }
+
+.divider{
+    width:90%;
+}
+body{
+    margin:0px;
+}
 /*=======================
 HEADER
 ========================*/
 .primary-header{
     padding:10px;
-    margin:25px;
 }
 
 .logo-container{
-    float: left;
-    display: flex;  
+    display: inline-block;  
+}
+.star-logo{
+    float:left;
+    display:flex;
+    margin:20px;
 }
 
-.logo-container img{
-    width:50px;
-    height:50px;
+.star-logo img{
+    width:3em;
+    height:3em;
+}
+
+.hotel-name{
+    line-height: 16px;
 }
 
 .top-nav{
@@ -34,7 +48,7 @@ HEADER
 }
 
 .top-nav a{
-    padding:10px;
+    padding:15px;
     display:inline-block;
     font-family: cursive;
 }
@@ -234,25 +248,94 @@ GALLERY PAGE
 /*--------------------------
 OFFERS
 --------------------------*/
+#offer-section{
+    margin:30px;
+}
 
+#intro-container{
+    text-align: center;
+    margin:50px;
+}
+
+#intro-container h1{
+    font-family: Montserrat,cursive;
+}
+
+#tag{
+    text-align:center;
+    font-family:Lora,cursive;
+}
+
+#deals-offered{
+    display:block;    
+}
+
+#wedding-offer, #rooms-offer{
+    display:flex;
+    padding:25px;
+}
+
+.col-6-offer{
+    display:inline-block;
+    width:50%;
+}
+
+.col-6-offer img{
+    width:50%;
+    height: 50%;
+}
+
+.img-on-deals{
+    text-align: center;
+}
+
+#wedding-title{
+    font-family: Alegreya, sans-serif;
+    font-weight: 800;
+    line-height: 25px;
+}
+
+.txt-on-deals{
+    padding:25px;
+}
+#wedding-txt{
+    font-family:Cormorant;
+}
 /*======================
 FOOTER
 ======================*/
 /*bottom footer*/
 .bottom-footer{
     padding:10px;
+    border-top:groove;
 }
 
 .bottom-footer small{
     padding:10px;
-    float:left;
+    display: inline-block;
 }
 
 .bottom-nav{
     float:right;
+    padding:20px;
 }
 
 /*top social container footer*/
-.social-container, .creator-container{
+.social-container{
     text-align:center;
+    padding:20px;
+    border-top:groove;
+}
+
+.creator-container{
+    text-align:center;
+    font-family: cursive;
+    font-size: 0.85em;
+    border-top:groove;
+}
+
+
+.icon-food{
+    width:1em;
+    height:1em;
 }
