@@ -3,6 +3,10 @@
     <head>
         <title>Reservations</title>
         <link rel="stylesheet" href="assets/stylesheets/styles.css">
+        
+        <!--Google Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Lobster|Raleway|Pacifico|Shadows+Into+Light|Roboto' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,400italic|Poiret+One' rel='stylesheet' type='text/css'>        
     </head>
     <body>
         <!--HEADER-->
@@ -13,7 +17,10 @@
                     <!--logo-->
                     <img src="assets/images/star-logo.png">
                     <!--hotel name-->
-                    <h2 class="hotel-name">Star Hotel</h2>
+                    <div>
+                        <h2 class="hotel-name">Star Hotel</h2>
+                        <p class="tag">Because we treat you like a star</p>
+                    </div>
                 </div>
             </div>
             
@@ -28,9 +35,38 @@
             </nav>
         </header>
         
-        <hr class="divider">
-        
-        
+        <hr class="divider">        
+<!-------------------------------------------------------------------------------------------------------------------->        
+           <!--3 images to display reservations-->
+        <section class="row-reservation">
+            <div class="grid">
+                <!--Presidential Suite-->
+                <section class="teaser col-1">
+                    <a href="reservations.html">
+                        <img src="assets/images/reservations/presidential-suite.jpg" alt="Gallery">
+                    </a>
+                    <h4>Presidential Suite.</h4>
+                </section>
+
+                <!--Conference Room-->
+                <section class="teaser col-1">
+                    <a href="reservations.html">
+                        <img src="assets/images/reservations/conference-room.jpg" alt="Reservations">
+                    </a>
+                    <h4>Conference Room.</h4>
+                </section>
+                
+                <!--Full Board-->
+                <section class="teaser col-1">
+                    <a href="reservations.html">
+                        <img src="assets/images/reservations/full-board.jpg" alt="Our Offers">
+                        <h4>Full Board</h4>
+                    </a>
+                </section>
+            </div>
+        </section>
+
+<!-------------------------------------------------------------------------------------------------------------------->        
         <section id="reservation-form-container">
             <!--title-->
             <div class="leading-title">
@@ -92,26 +128,27 @@
                     
                     <!--M-pesa-->
                     <div class="payment-items">
-                        <img src="assets/images/star-logo.png"  style="width:55px;height:55px;">
+                        <img src="assets/images/reservations/m-pesa-logo.png">
                         <p>M-pesa</p>
                         <input id="m-pesa" class="input radio" type="checkbox" value="m-pesa">                        
                     </div>
+
                     <!--airtel money-->
                     <div class="payment-items">
-                        <img src="assets/images/star-logo.png"  style="width:55px;height:55px;">
+                        <img src="assets/images/reservations/airtel-money-logo.png">
                         <p>Airtel Money</p>
                         <input id="airtel-money" class="input radio" type="checkbox" value="airtel-money">                        
                     </div>
                     <!--master card-->
                     <div class="payment-items">
-                        <img src="assets/images/star-logo.png"  style="width:55px;height:55px;">
+                        <img src="assets/images/reservations/mastercard-logo.png">
                         <p>Mastercard</p>
                         <input id="mastercard" class="input radio" type="checkbox" value="mastercard">
                     </div>
                     
                     <!--visa-->
                     <div class="payment-items">
-                        <img src="assets/images/star-logo.png"  style="width:55px;height:55px;">
+                        <img src="assets/images/reservations/visa-logo.png">
                         <p>Visa</p>
                         <input id="visa" class="input radio" type="checkbox" value="visa">                        
                     </div>
@@ -123,7 +160,7 @@
                 </div>
             </form>
         </section>
-        
+<!-------------------------------------------------------------------------------------------------------------------->        
         <!--FOOTER-->
         <footer>
             <!--social container-->

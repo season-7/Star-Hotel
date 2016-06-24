@@ -1,6 +1,6 @@
 /*Links*/
 a {
-  color: #648880;
+  color: #000;
   text-decoration: none;
 }
 a:hover {
@@ -12,7 +12,8 @@ p a {
 }
 
 .divider{
-    width:90%;
+    width: 100%;
+    margin: 0px;
 }
 body{
     margin:0px;
@@ -22,6 +23,7 @@ HEADER
 ========================*/
 .primary-header{
     padding:10px;
+    background-color: #C9C2B9;
 }
 
 .logo-container{
@@ -34,12 +36,20 @@ HEADER
 }
 
 .star-logo img{
-    width:3em;
-    height:3em;
+    width:4em;
+    height:4em;
 }
 
+
 .hotel-name{
-    line-height: 16px;
+    font-family: Raleway,cursive;
+    line-height: 4px;
+}
+
+.tag{
+    font-family: Pacifico;
+    font-size: 12px;
+    margin:0px;
 }
 
 .top-nav{
@@ -63,6 +73,13 @@ HEADER
     border-radius:10px;
 }
 
+.top-nav a:hover{
+    border: solid 1px cadetblue;
+    color:black;
+    background:cadetblue;
+    border-radius:10px;
+}
+
 /*=====================
 SECTIONs
 ======================*/
@@ -72,17 +89,17 @@ HOME PAGE
 .hero-container {
   color: #fff;
   line-height: 44px;
-  padding: 22px 80px 66px 80px;
+    padding: 20px 70px 0px 70px;
   text-align: center;
 }
 
 .hero-container img{
-    width:50%;
+    width:100%;
 }
 .row{
   min-width: 1000px;
   background: #fff;
-  padding: 66px 0 44px 0;
+  padding: 6px 0 44px 0;
 }
 
 .grid {
@@ -109,9 +126,51 @@ HOME PAGE
   margin-bottom: 22px;
   max-width: 100%
 }
+
+.teaser h5{
+    font-family: Poiret One,Lobster;
+    font-size:20px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.teaser a h3{
+    font-family: Poiret One,Lobster;
+    font-size:20px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.location-container{
+    text-align: center;
+    padding:25px;
+    margin-bottom: 50px;
+}
+
+.location-text{
+    font-family: Poiret One, Lobster, cursive;
+    font-size:25px;
+    
+}
+
+.location-map{
+    
+}
+
 /*-----------------------------
 RESERVATION PAGE
 -------------------------------*/
+.row-reservation{
+  min-width: 1000px;
+  background: #fff;
+  padding: 6px 0 0px 0;
+    margin-top: 45px;
+}
+
+.teaser h4{
+    text-align: center;
+}
+
 .leading-title{
     font-family:cursive;
     text-align:center;
@@ -125,7 +184,7 @@ RESERVATION PAGE
 
 /*reservation form section*/
 #reservation-form-container{
-    margin:100px;
+    margin:60px;
 }
 /*actual reservation form*/
 #reservation-form{
@@ -205,7 +264,9 @@ label{
     padding:10px;
 }
 #payment-title{
+    font-family: Poiret One;
     text-align:center;
+    
 }
 /*payment option*/
 .payment-options{
@@ -219,9 +280,15 @@ label{
     text-align: center;
 }
 
-#m-pesa{
-    
+.payment-items img{
+    text-align: center;
 }
+
+.payment-items p{
+    text-align: center;
+}
+
+#m-pesa{}
 #airtel{}
 #master-card{}
 #visa{}
@@ -244,6 +311,44 @@ label{
 /*---------------------------
 GALLERY PAGE
 ----------------------------*/
+.row-gallery{
+  min-width: 1000px;
+  background: #fff;
+  padding: 6px 0 44px 0;
+}
+
+.grid-gallery {
+  margin: 0 auto;
+  width: 1000px;
+    padding:35px;
+}
+
+.grid-gallery, .col-1{
+  padding-left: 18px;
+  padding-right: 18px;
+}
+.col-1{
+  display: inline-block;
+  vertical-align: top;
+  width: 29.33%;
+}
+
+.teaser-gallery a:hover h3 {
+  color: #a9b2b9;
+}
+.teaser-gallery img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
+}
+
+.teaser-gallery a h3{
+    font-family: Poiret One,Lobster;
+    font-size:20px;
+    line-height: 25px;
+    text-align: center;
+}
 
 /*--------------------------
 OFFERS
@@ -281,18 +386,18 @@ OFFERS
 }
 
 .col-6-offer img{
-    width:50%;
     height: 50%;
+    width:100%;
 }
 
 .img-on-deals{
     text-align: center;
 }
 
-#wedding-title{
+.offer-title{
     font-family: Alegreya, sans-serif;
     font-weight: 800;
-    line-height: 25px;
+    margin-top: -27px;
 }
 
 .txt-on-deals{
@@ -301,13 +406,53 @@ OFFERS
 #wedding-txt{
     font-family:Cormorant;
 }
+
+.view-offer-btn{    
+    background: none;
+    display: inline-block;
+    border-radius: 0px;
+    padding: 0px 0px;
+    box-shadow: 0 0 0px 0px rgba(0,0,0,0);
+}
+
+.view-offer-btn a {
+    transition: all 0.5s ease;
+    background: #fff;
+    color: #9a7f46;
+    border: 1px solid;
+    padding: 10px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 0;
+    box-shadow: none;
+}
+.view-offer-btn a:hover {
+    color: #9a7f46;
+}
+
+.view-offer-btn a:link {
+    color: #9a7f46;
+    text-decoration: none;
+    font-family: 'Libre Baskerville', 'Times New Roman',Helvetica,sans-serif;
+}
+
+.view-offer-btn a {
+    color: #fff;
+}
+.view-offer-btn a:visited {
+    color: #9f8e68;
+    text-decoration: none;
+    font-family: 'Libre Baskerville', 'Times New Roman', Helvetica, sans-serif;
+}
 /*======================
 FOOTER
 ======================*/
+footer{
+    background-color:#E8E3DF;
+}
 /*bottom footer*/
 .bottom-footer{
     padding:10px;
-    border-top:groove;
 }
 
 .bottom-footer small{
@@ -330,10 +475,9 @@ FOOTER
 .creator-container{
     text-align:center;
     font-family: cursive;
-    font-size: 0.85em;
+    font-size: 0.65em;
     border-top:groove;
 }
-
 
 .icon-food{
     width:1em;
